@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Service | Professionele CV & Sollicitatie Hulp</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f5f7fb;
+color:#1a1a1a;
+}
+
+header{
+background:#0a2a4a;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+header h1{font-size:44px;margin:0;}
+header p{font-size:18px;opacity:0.9;max-width:700px;margin:auto;}
+
+.cta{
+display:inline-block;
+margin-top:20px;
+padding:12px 22px;
+background:#00a6ff;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:28px;
+margin-bottom:20px;
+}
+
+.grid{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:260px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.price{
+font-size:26px;
+color:#0a2a4a;
+font-weight:bold;
+}
+
+button{
+width:100%;
+padding:10px;
+border:none;
+background:#0a2a4a;
+color:white;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+form{
+background:white;
+max-width:500px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.submit{
+background:#00a6ff;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:30px;
+font-size:13px;
+color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>CV Service</h1>
+<p>Wij nemen jouw volledige CV & sollicitatiepresentatie uit handen en maken het professioneel, overtuigend en werkgevers-proof.</p>
+<a href="#bestel" class="cta">Start jouw CV upgrade</a>
+</header>
+
+<section class="container">
+<h2 class="section-title">Wij regelen alles voor jou</h2>
+<p style="text-align:center;max-width:750px;margin:auto;">
+Geen gedoe met schrijven of opmaak. Jij levert je info aan, wij bouwen een professioneel CV dat gericht is op meer gesprekken en kansen.
+</p>
+</section>
+
+<section class="container">
+<h2 class="section-title">Pakketten</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>CV Basic</h3>
+<p class="price">€9</p>
+<p>Herstructurering & nette opmaak</p>
+<button onclick="selectPackage('Basic €9')">Kies</button>
+</div>
+
+<div class="card">
+<h3>CV Pro ⭐</h3>
+<p class="price">€15</p>
+<p>Volledig herschreven + professioneel opgebouwd</p>
+<button onclick="selectPackage('Pro €15')">Kies</button>
+</div>
+
+<div class="card">
+<h3>CV Premium</h3>
+<p class="price">€25</p>
+<p>Complete sollicitatie boost + optimalisatie</p>
+<button onclick="selectPackage('Premium €25')">Kies</button>
+</div>
+
+</div>
+</section>
+
+<section class="container" id="bestel">
+<h2 class="section-title">Start jouw CV upgrade</h2>
+
+<p style="text-align:center;max-width:600px;margin:auto;">
+Na je aanvraag ontvang je binnen 24 uur een e-mail. Wij starten direct met jouw CV en begeleiden je persoonlijk tot het eindresultaat.
+</p>
+
+<form id="cv-form">
+
+<input type="text" name="name" placeholder="Naam" required>
+<input type="email" name="email" placeholder="E-mail" required>
+
+<select name="package" id="package" required>
+<option value="">Kies pakket</option>
+<option value="Basic €9">Basic €9</option>
+<option value="Pro €15">Pro €15</option>
+<option value="Premium €25">Premium €25</option>
+</select>
+
+<textarea name="message" placeholder="Vertel kort over je werkervaring of huidige CV" required></textarea>
+
+<button class="submit" type="submit">Verstuur aanvraag</button>
+
+</form>
+</section>
+
+<section class="container">
+<h2 class="section-title">Veelgestelde vragen</h2>
+
+<div style="max-width:750px;margin:auto;">
+
+<h4>Hoe werkt het?</h4>
+<p>Je vult je gegevens in en wij bouwen jouw CV volledig professioneel opnieuw op.</p>
+
+<h4>Moet ik zelf iets kunnen schrijven?</h4>
+<p>Nee. Wij doen het schrijfwerk en de structuur volledig voor jou.</p>
+
+<h4>Hoe snel ontvang ik resultaat?</h4>
+<p>Meestal binnen 24–48 uur.</p>
+
+<h4>Hoe verloopt communicatie?</h4>
+<p>Alles gaat via e-mail, persoonlijk en duidelijk.</p>
+
+</div>
+</section>
+
+<section class="container">
+<h2 class="section-title">Contact</h2>
+<p style="text-align:center;font-weight:bold;">📧 infocvservice70@gmail.com</p>
+<p style="text-align:center;">Wij reageren binnen 24 uur.</p>
+</section>
+
+<footer>
+© CV Service – Professionele CV & Sollicitatie Service
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+emailjs.init("fg3x9snV40S-ijke0");
+
+function selectPackage(pkg){
+document.getElementById("package").value = pkg;
+window.location.href="#bestel";
+}
+
+document.getElementById("cv-form").addEventListener("submit", function(e){
+e.preventDefault();
+
+emailjs.sendForm(
+"service_z81n99u",
+"template_csno00g",
+this
+).then(() => {
+alert("Aanvraag verzonden! We nemen binnen 24 uur contact met je op.");
+this.reset();
+}).catch(err => {
+alert("Er ging iets mis, probeer opnieuw.");
+console.log(err);
+});
+
+});
+</script>
+
+</body>
+</html>
