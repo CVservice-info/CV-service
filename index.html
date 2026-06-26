@@ -8,92 +8,132 @@
 <style>
 body{
 margin:0;
-font-family:Arial;
-background:#f5f7fb;
+font-family:'Segoe UI',sans-serif;
+background:#eef3f8;
 color:#1a1a1a;
 }
 
 header{
-background:#0a2a4a;
+background:linear-gradient(135deg,#0a2a4a,#123e6b);
 color:white;
 text-align:center;
-padding:80px 20px;
+padding:90px 20px;
 }
 
-header h1{font-size:44px;margin:0;}
-header p{font-size:18px;opacity:0.9;max-width:700px;margin:auto;}
+header h1{
+font-size:52px;
+margin:0;
+}
+
+header p{
+font-size:18px;
+opacity:0.9;
+max-width:750px;
+margin:15px auto;
+}
 
 .cta{
 display:inline-block;
 margin-top:20px;
-padding:12px 22px;
+padding:14px 26px;
 background:#00a6ff;
 color:white;
 text-decoration:none;
-border-radius:6px;
+border-radius:8px;
 font-weight:bold;
+transition:0.3s;
+}
+
+.cta:hover{
+transform:scale(1.05);
+background:#0090dd;
+}
+
+.badges{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+font-size:13px;
+opacity:0.9;
+}
+
+.badge{
+background:rgba(255,255,255,0.15);
+padding:6px 12px;
+border-radius:20px;
 }
 
 .container{
-max-width:1000px;
+max-width:1050px;
 margin:auto;
-padding:40px 20px;
+padding:50px 20px;
 }
 
 .section-title{
 text-align:center;
-font-size:28px;
-margin-bottom:20px;
+font-size:32px;
+margin-bottom:25px;
 }
 
 .grid{
 display:flex;
-gap:20px;
+gap:25px;
 flex-wrap:wrap;
 justify-content:center;
 }
 
 .card{
 background:white;
-width:260px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+width:280px;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .price{
-font-size:26px;
+font-size:28px;
 color:#0a2a4a;
 font-weight:bold;
 }
 
 button{
 width:100%;
-padding:10px;
+padding:12px;
 border:none;
 background:#0a2a4a;
 color:white;
-border-radius:6px;
+border-radius:8px;
 cursor:pointer;
-margin-top:10px;
+margin-top:12px;
+}
+
+button:hover{
+background:#123e6b;
 }
 
 form{
 background:white;
-max-width:500px;
+max-width:520px;
 margin:auto;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 input,select,textarea{
 width:100%;
-padding:10px;
+padding:12px;
 margin-top:10px;
-border-radius:6px;
-border:1px solid #ccc;
+border-radius:8px;
+border:1px solid #ddd;
 }
 
 .submit{
@@ -103,7 +143,7 @@ font-weight:bold;
 
 footer{
 text-align:center;
-padding:30px;
+padding:35px;
 font-size:13px;
 color:#666;
 }
@@ -114,16 +154,36 @@ color:#666;
 
 <header>
 <h1>CV Service</h1>
-<p>Wij nemen jouw volledige CV & sollicitatiepresentatie uit handen en maken het professioneel, overtuigend en werkgevers-proof.</p>
+<p>Wij maken jouw CV professioneel, overtuigend en gericht op meer sollicitatiegesprekken.</p>
+
 <a href="#bestel" class="cta">Start jouw CV upgrade</a>
+
+<div class="badges">
+<div class="badge">⚡ Binnen 24-48 uur</div>
+<div class="badge">💼 Professioneel CV design</div>
+<div class="badge">📩 Persoonlijk via e-mail</div>
+</div>
 </header>
 
 <section class="container">
-<h2 class="section-title">Wij regelen alles voor jou</h2>
+<h2 class="section-title">Waarom CV Service?</h2>
 <p style="text-align:center;max-width:750px;margin:auto;">
-Geen gedoe met schrijven of opmaak. Jij levert je info aan, wij bouwen een professioneel CV dat gericht is op meer gesprekken en kansen.
+Veel CV’s worden afgewezen omdat ze onduidelijk of zwak zijn. Wij herschrijven en verbeteren jouw CV zodat werkgevers sneller interesse tonen.
 </p>
 </section>
+
+<section class="container">
+<h2 class="section-title">Hoe het werkt</h2>
+<div style="max-width:700px;margin:auto;text-align:center;">
+<p>1. Kies je pakket</p>
+<p>2. Vul je gegevens in</p>
+<p>3. Wij maken je CV professioneel en sturen het terug via e-mail</p>
+</div>
+</section>
+
+<p style="text-align:center;font-size:18px;">
+🔥 Meest gekozen: <b>Pro €15</b>
+</p>
 
 <section class="container">
 <h2 class="section-title">Pakketten</h2>
@@ -131,23 +191,23 @@ Geen gedoe met schrijven of opmaak. Jij levert je info aan, wij bouwen een profe
 <div class="grid">
 
 <div class="card">
-<h3>CV Basic</h3>
+<h3>Starter CV Boost</h3>
 <p class="price">€9</p>
-<p>Herstructurering & nette opmaak</p>
-<button onclick="selectPackage('Basic €9')">Kies</button>
+<p>Basis optimalisatie en nette opmaak</p>
+<button onclick="selectPackage('Starter €9')">Kies</button>
 </div>
 
 <div class="card">
-<h3>CV Pro ⭐</h3>
+<h3>Pro CV Upgrade ⭐</h3>
 <p class="price">€15</p>
-<p>Volledig herschreven + professioneel opgebouwd</p>
+<p>Volledig herschreven CV met betere structuur</p>
 <button onclick="selectPackage('Pro €15')">Kies</button>
 </div>
 
 <div class="card">
-<h3>CV Premium</h3>
+<h3>Complete Boost</h3>
 <p class="price">€25</p>
-<p>Complete sollicitatie boost + optimalisatie</p>
+<p>Maximale optimalisatie voor beste kans op werk</p>
 <button onclick="selectPackage('Premium €25')">Kies</button>
 </div>
 
@@ -155,11 +215,7 @@ Geen gedoe met schrijven of opmaak. Jij levert je info aan, wij bouwen een profe
 </section>
 
 <section class="container" id="bestel">
-<h2 class="section-title">Start jouw CV upgrade</h2>
-
-<p style="text-align:center;max-width:600px;margin:auto;">
-Na je aanvraag ontvang je binnen 24 uur een e-mail. Wij starten direct met jouw CV en begeleiden je persoonlijk tot het eindresultaat.
-</p>
+<h2 class="section-title">Bestel jouw CV</h2>
 
 <form id="cv-form">
 
@@ -168,12 +224,12 @@ Na je aanvraag ontvang je binnen 24 uur een e-mail. Wij starten direct met jouw 
 
 <select name="package" id="package" required>
 <option value="">Kies pakket</option>
-<option value="Basic €9">Basic €9</option>
+<option value="Starter €9">Starter €9</option>
 <option value="Pro €15">Pro €15</option>
 <option value="Premium €25">Premium €25</option>
 </select>
 
-<textarea name="message" placeholder="Vertel kort over je werkervaring of huidige CV" required></textarea>
+<textarea name="message" placeholder="Vertel kort over je werkervaring" required></textarea>
 
 <button class="submit" type="submit">Verstuur aanvraag</button>
 
@@ -181,33 +237,23 @@ Na je aanvraag ontvang je binnen 24 uur een e-mail. Wij starten direct met jouw 
 </section>
 
 <section class="container">
-<h2 class="section-title">Veelgestelde vragen</h2>
+<h2 class="section-title">FAQ</h2>
 
-<div style="max-width:750px;margin:auto;">
-
-<h4>Hoe werkt het?</h4>
-<p>Je vult je gegevens in en wij bouwen jouw CV volledig professioneel opnieuw op.</p>
-
-<h4>Moet ik zelf iets kunnen schrijven?</h4>
-<p>Nee. Wij doen het schrijfwerk en de structuur volledig voor jou.</p>
-
-<h4>Hoe snel ontvang ik resultaat?</h4>
-<p>Meestal binnen 24–48 uur.</p>
-
-<h4>Hoe verloopt communicatie?</h4>
-<p>Alles gaat via e-mail, persoonlijk en duidelijk.</p>
-
+<div style="max-width:700px;margin:auto;text-align:center;">
+<p><b>Hoe snel?</b> Binnen 24-48 uur</p>
+<p><b>Moet ik schrijven?</b> Nee</p>
+<p><b>Contact?</b> Via e-mail</p>
+<p><b>Betrouwbaar?</b> Ja, persoonlijk en professioneel</p>
 </div>
 </section>
 
 <section class="container">
 <h2 class="section-title">Contact</h2>
 <p style="text-align:center;font-weight:bold;">📧 infocvservice70@gmail.com</p>
-<p style="text-align:center;">Wij reageren binnen 24 uur.</p>
 </section>
 
 <footer>
-© CV Service – Professionele CV & Sollicitatie Service
+© CV Service - Professionele CV Service
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -217,7 +263,7 @@ emailjs.init("fg3x9snV40S-ijke0");
 
 function selectPackage(pkg){
 document.getElementById("package").value = pkg;
-window.location.href="#bestel";
+window.location.hash = "#bestel";
 }
 
 document.getElementById("cv-form").addEventListener("submit", function(e){
@@ -227,10 +273,10 @@ emailjs.sendForm(
 "service_z81n99u",
 "template_csno00g",
 this
-).then(() => {
-alert("Aanvraag verzonden! We nemen binnen 24 uur contact met je op.");
+).then(()=>{
+alert("Aanvraag verzonden! We nemen contact op via e-mail.");
 this.reset();
-}).catch(err => {
+}).catch(err=>{
 alert("Er ging iets mis, probeer opnieuw.");
 console.log(err);
 });
