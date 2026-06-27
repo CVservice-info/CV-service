@@ -1,10 +1,9 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>WebStudio Pro - Premium Webdesign</title>
+<title>WebStudio Pro</title>
 
 <style>
 body {
@@ -14,7 +13,6 @@ body {
   color: white;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg,#2563eb,#7c3aed);
   padding: 20px;
@@ -76,7 +74,6 @@ section {
 
 .highlight {
   border:2px solid #7c3aed;
-  transform: scale(1.05);
 }
 
 .price {
@@ -118,6 +115,12 @@ button {
   font-weight:bold;
 }
 
+.faq {
+  max-width:600px;
+  margin:auto;
+  text-align:left;
+}
+
 footer {
   text-align:center;
   padding:20px;
@@ -133,21 +136,21 @@ footer {
 <header class="hero">
   <nav>
     <h2>WebStudio Pro</h2>
-    <a href="#contact" style="color:white;text-decoration:none;">Contact</a>
+    <a href="#contact" style="color:white;">Contact</a>
   </nav>
 
   <div class="hero-content">
-    <h1>Websites die écht klanten opleveren</h1>
-    <p>Premium webdesign voor ondernemers die willen groeien.</p>
+    <h1>Websites die klanten opleveren</h1>
+    <p>Premium webdesign voor ondernemers.</p>
     <a href="#pricing" class="btn">Bekijk pakketten</a>
   </div>
 </header>
 
 <section class="features">
-  <div>⚡ Snel online</div>
-  <div>🎨 Premium design</div>
-  <div>📱 Mobiel perfect</div>
-  <div>🚀 Meer klanten</div>
+  <div>⚡ Snel</div>
+  <div>🎨 Premium</div>
+  <div>📱 Mobiel</div>
+  <div>🚀 Resultaat</div>
 </section>
 
 <section id="pricing">
@@ -157,38 +160,47 @@ footer {
     <div class="card">
       <h3>Starter</h3>
       <p class="price">€129</p>
-      <p>1 pagina website</p>
     </div>
 
     <div class="card highlight">
       <h3>Business ⭐</h3>
       <p class="price">€299</p>
-      <p>Meest gekozen</p>
     </div>
 
     <div class="card">
       <h3>Premium</h3>
       <p class="price">€599</p>
-      <p>Complete website</p>
     </div>
   </div>
 </section>
 
+<section class="faq">
+  <h2>FAQ</h2>
+
+  <p><b>Hoe snel klaar?</b><br>Binnen 2–5 dagen</p>
+  <p><b>Moet ik iets doen?</b><br>Alleen info aanleveren</p>
+  <p><b>Is het mobiel geschikt?</b><br>Ja altijd</p>
+  <p><b>Kan ik wijzigingen krijgen?</b><br>Ja kleine aanpassingen</p>
+</section>
+
 <section id="contact">
-  <h2>Vraag jouw website aan</h2>
+  <h2>Contact / Aanvraag</h2>
 
   <form id="form">
     <input type="text" id="name" placeholder="Naam" required/>
     <input type="email" id="email" placeholder="Email" required/>
     <textarea id="message" placeholder="Wat wil je?" required></textarea>
 
-    <button type="submit">Verstuur aanvraag</button>
+    <button type="submit">Verstuur</button>
   </form>
 
   <p id="status"></p>
 
-  <a class="whatsapp" href="https://wa.me/316XXXXXXXX" target="_blank">
-    💬 WhatsApp direct
+  <!-- ✅ FIXED WHATSAPP -->
+  <a class="whatsapp"
+     href="https://wa.me/31625166241"
+     target="_blank">
+     💬 WhatsApp direct
   </a>
 </section>
 
@@ -212,10 +224,11 @@ document.getElementById("form").addEventListener("submit", function(e){
     message: document.getElementById("message").value
   })
   .then(() => {
-    document.getElementById("status").innerText = "Succes! We nemen contact op.";
+    document.getElementById("status").innerText = "Succes! Ik neem contact op.";
+    document.getElementById("form").reset();
   })
   .catch(() => {
-    document.getElementById("status").innerText = "Er ging iets mis.";
+    document.getElementById("status").innerText = "Fout, probeer opnieuw.";
   });
 });
 </script>
