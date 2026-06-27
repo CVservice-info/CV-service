@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WebStudio Pro - Premium Webdesign</title>
 
+<link rel="stylesheet" href="style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<header class="hero">
+  <nav>
+    <h2>WebStudio Pro</h2>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Websites die écht klanten opleveren</h1>
+    <p>Premium webdesign voor ondernemers die willen groeien en meer omzet willen.</p>
+    <a href="#pricing" class="btn">Bekijk pakketten</a>
+  </div>
+</header>
+
+<section class="features">
+  <div>⚡ Snel online</div>
+  <div>🎨 Premium design</div>
+  <div>📱 Mobiel perfect</div>
+  <div>🚀 Conversie gericht</div>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Pakketten</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Starter</h3>
+      <p class="price">€129</p>
+      <p>1 pagina website</p>
+    </div>
+
+    <div class="card highlight">
+      <h3>Business ⭐</h3>
+      <p class="price">€299</p>
+      <p>Meest gekozen - 5 pagina’s + contactformulier</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <p class="price">€599</p>
+      <p>Complete website + SEO + optimalisatie</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <h2>Voorbeelden</h2>
+  <div class="portfolio-grid">
+    <div class="project">Restaurant Website</div>
+    <div class="project">Kapper Website</div>
+    <div class="project">Coach Website</div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Wat klanten zeggen</h2>
+
+  <div class="cards">
+    <div class="card">
+      "Super snelle service en mooie website!" – Mark
+    </div>
+    <div class="card">
+      "Binnen 3 dagen online, top kwaliteit." – Lisa
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Veelgestelde vragen</h2>
+
+  <p><b>Hoe snel is mijn website klaar?</b><br>Meestal binnen 2–5 dagen.</p>
+  <p><b>Kan ik aanpassingen krijgen?</b><br>Ja, kleine aanpassingen zijn inbegrepen.</p>
+  <p><b>Moet ik zelf iets doen?</b><br>Alleen teksten en informatie aanleveren.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Vraag jouw website aan</h2>
+
+  <form id="form">
+    <input type="text" id="name" placeholder="Naam" required/>
+    <input type="email" id="email" placeholder="Email" required/>
+    <textarea id="message" placeholder="Beschrijf jouw website..." required></textarea>
+
+    <button type="submit">Verstuur aanvraag</button>
+  </form>
+
+  <p id="status"></p>
+
+  <a class="whatsapp" href="https://wa.me/NUMMERHIER" target="_blank">
+    💬 WhatsApp direct
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 WebStudio Pro</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b0f1a;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  padding: 20px;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:10px 20px;
+}
+
+.hero-content {
+  text-align:center;
+  padding:90px 20px;
+}
+
+.hero h1 {
+  font-size: 44px;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  background:white;
+  color:black;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* FEATURES */
+.features {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:30px;
+  background:#111827;
+  flex-wrap:wrap;
+}
+
+/* SECTIONS */
+section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+/* CARDS */
+.cards {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card {
+  background:#1f2937;
+  padding:20px;
+  border-radius:12px;
+  width:240px;
+}
+
+.highlight {
+  border:2px solid #7c3aed;
+  transform: scale(1.05);
+}
+
+.price {
+  font-size:26px;
+  font-weight:bold;
+}
+
+/* PORTFOLIO */
+.portfolio-grid {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.project {
+  background:#111827;
+  padding:20px;
+  border-radius:10px;
+  width:200px;
+}
+
+/* FAQ */
+.faq p {
+  max-width:600px;
+  margin:10px auto;
+  text-align:left;
+}
+
+/* CONTACT */
+form {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-width:400px;
+  margin:auto;
+}
+
+input, textarea {
+  padding:12px;
+  border:none;
+  border-radius:6px;
+}
+
+button {
+  padding:12px;
+  background:#2563eb;
+  border:none;
+  color:white;
+  border-radius:6px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 18px;
+  background:#25D366;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}(function(){
+  emailjs.init("ff3x9snV40S-ijke0");
+})();
+
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const status = document.getElementById("status");
+  status.innerText = "Versturen...";
+
+  emailjs.send("service_z81n99u", "template_csno00g", {
+    from_name: document.getElementById("name").value,
+    from_email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  })
+  .then(()=>{
+    status.innerText = "Succes! Ik neem contact op.";
+  })
+  .catch(()=>{
+    status.innerText = "Er ging iets mis.";
+  });
+});
