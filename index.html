@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>WebStudio Pro - Premium Webdesign Agency</title>
+
+<!-- 🔍 SEO -->
+<title>Website laten maken | WebStudio Pro Nederland</title>
+
+<meta name="description" content="Professionele websites laten maken die klanten opleveren. Webdesign voor ondernemers in Nederland. Snel, modern en conversiegericht.">
+<meta name="keywords" content="website laten maken, webdesign Nederland, webdesigner, website voor bedrijf, professionele website, goedkope website">
+<meta name="author" content="WebStudio Pro">
+
+<meta property="og:title" content="Website laten maken | WebStudio Pro">
+<meta property="og:description" content="Premium websites die klanten opleveren voor ondernemers in Nederland.">
+<meta property="og:type" content="website">
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <style>
 body {
@@ -59,12 +73,6 @@ section {
   text-align:center;
 }
 
-.container {
-  max-width:1000px;
-  margin:auto;
-}
-
-/* FEATURES */
 .features {
   display:flex;
   justify-content:center;
@@ -74,7 +82,6 @@ section {
   padding:30px;
 }
 
-/* CARDS */
 .cards {
   display:flex;
   justify-content:center;
@@ -104,7 +111,7 @@ section {
   font-weight:bold;
 }
 
-/* TEXT BLOCK */
+/* TEXT */
 .text {
   max-width:750px;
   margin:auto;
@@ -162,46 +169,47 @@ footer {
 }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
 
 <!-- HERO -->
 <header class="hero">
-  <nav>
-    <h2>WebStudio Pro</h2>
-    <a href="#contact" style="color:white;">Contact</a>
-  </nav>
 
-  <div class="hero-content">
-    <h1>Websites die écht klanten opleveren</h1>
-    <p>
-      Wij bouwen premium websites voor ondernemers die meer klanten, meer vertrouwen en meer omzet willen.
-    </p>
+<nav>
+  <h2>WebStudio Pro</h2>
+  <a href="#contact" style="color:white;">Contact</a>
+</nav>
 
-    <a href="#pricing" class="btn">Bekijk pakketten</a>
-  </div>
+<div class="hero-content">
+
+<!-- 🔥 SEO H1 -->
+<h1>Professionele websites laten maken die klanten opleveren</h1>
+
+<p>
+Wij bouwen moderne websites voor ondernemers in Nederland die meer klanten, aanvragen en omzet willen.
+</p>
+
+<a href="#pricing" class="btn">Bekijk pakketten</a>
+
+</div>
 </header>
 
 <!-- FEATURES -->
 <section class="features">
-  <div>⚡ Snelle levering</div>
+  <div>⚡ Snel online</div>
   <div>🎨 Premium design</div>
-  <div>📱 Perfect mobiel</div>
+  <div>📱 Mobiel perfect</div>
   <div>🚀 Conversie gericht</div>
 </section>
 
-<!-- WHAT YOU DO -->
+<!-- WHAT IS IT -->
 <section>
-  <div class="container">
-    <h2>Wat wij doen</h2>
-    <p class="text">
-      Wij maken geen “mooie websites alleen”. Wij bouwen websites die klanten aantrekken.
-      Alles is ontworpen om bezoekers om te zetten in betalende klanten.
-      Inclusief design, structuur, teksten en optimalisatie.
-    </p>
-  </div>
+  <h2>Wat wij doen</h2>
+  <p class="text">
+    Wij maken professionele websites voor ondernemers in Nederland.
+    Onze websites zijn snel, mobielvriendelijk en gericht op het genereren van klanten en aanvragen.
+  </p>
 </section>
 
 <!-- PACKAGES -->
@@ -213,45 +221,32 @@ footer {
     <div class="card" onclick="selectPackage('Starter €129')">
       <h3>Starter</h3>
       <p class="price">€129</p>
-      <p>1 pagina website<br>Basis design + contact</p>
+      <p>Basis website + contact</p>
     </div>
 
     <div class="card highlight" onclick="selectPackage('Business €299')">
       <h3>Business ⭐</h3>
       <p class="price">€299</p>
-      <p>Meest gekozen<br>5 pagina’s + betere conversie structuur</p>
+      <p>Meest gekozen + betere conversie</p>
     </div>
 
     <div class="card" onclick="selectPackage('Premium €599')">
       <h3>Premium</h3>
       <p class="price">€599</p>
-      <p>Complete website<br>SEO + optimalisatie + extra functies</p>
+      <p>Complete website + SEO + optimalisatie</p>
     </div>
 
   </div>
 </section>
 
-<!-- DIFFERENCE -->
+<!-- SEO EXTRA -->
 <section>
-  <h2>Waarom ons?</h2>
+  <h2>Website laten maken in Nederland</h2>
   <p class="text">
-    De meeste websites zijn alleen “mooi”. Wij focussen op resultaat:
-    meer klanten, meer aanvragen en meer vertrouwen.
+    Ben je op zoek naar een professionele website laten maken?
+    Wij helpen ondernemers met moderne websites die klanten opleveren.
+    Snel geleverd, betaalbaar en volledig op maat.
   </p>
-</section>
-
-<!-- TESTIMONIALS -->
-<section>
-  <h2>Wat klanten zeggen</h2>
-
-  <div class="cards">
-    <div class="card">
-      “Binnen 3 dagen mijn website en meteen nieuwe klanten.” – Mark
-    </div>
-    <div class="card">
-      “Super strak design en snelle communicatie.” – Lisa
-    </div>
-  </div>
 </section>
 
 <!-- FAQ -->
@@ -260,7 +255,7 @@ footer {
 
   <p><b>Hoe snel klaar?</b><br>2–5 dagen</p>
   <p><b>Moet ik zelf iets doen?</b><br>Alleen info aanleveren</p>
-  <p><b>Kan ik later aanpassen?</b><br>Ja kleine wijzigingen</p>
+  <p><b>Kan ik aanpassen?</b><br>Ja kleine wijzigingen</p>
   <p><b>Is het mobiel?</b><br>Ja volledig responsive</p>
 </section>
 
@@ -271,7 +266,7 @@ footer {
   <form id="form">
     <input type="text" id="name" placeholder="Naam" required/>
     <input type="email" id="email" placeholder="Email" required/>
-    <textarea id="message" placeholder="Vertel je idee / pakket" required></textarea>
+    <textarea id="message" placeholder="Jouw bericht / pakket" required></textarea>
 
     <button type="submit">Verstuur aanvraag</button>
   </form>
