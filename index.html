@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>WebStudio Pro</title>
+<title>WebStudio Pro - Premium Webdesign Agency</title>
 
 <style>
 body {
@@ -14,6 +14,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* HERO */
 .hero {
   background: linear-gradient(135deg,#2563eb,#7c3aed);
   padding: 20px;
@@ -31,9 +32,16 @@ nav {
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 46px;
 }
 
+.hero p {
+  max-width:700px;
+  margin:auto;
+  opacity:0.9;
+}
+
+/* BUTTON */
 .btn {
   display:inline-block;
   margin-top:20px;
@@ -45,20 +53,28 @@ nav {
   text-decoration:none;
 }
 
+/* SECTIONS */
+section {
+  padding:70px 20px;
+  text-align:center;
+}
+
+.container {
+  max-width:1000px;
+  margin:auto;
+}
+
+/* FEATURES */
 .features {
   display:flex;
   justify-content:center;
   gap:20px;
-  padding:30px;
-  background:#111827;
   flex-wrap:wrap;
+  background:#111827;
+  padding:30px;
 }
 
-section {
-  padding:60px 20px;
-  text-align:center;
-}
-
+/* CARDS */
 .cards {
   display:flex;
   justify-content:center;
@@ -68,15 +84,15 @@ section {
 
 .card {
   background:#1f2937;
-  padding:20px;
+  padding:25px;
   border-radius:12px;
-  width:240px;
+  width:280px;
   cursor:pointer;
   transition:0.2s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform:scale(1.05);
 }
 
 .highlight {
@@ -84,15 +100,24 @@ section {
 }
 
 .price {
-  font-size:26px;
+  font-size:28px;
   font-weight:bold;
 }
 
+/* TEXT BLOCK */
+.text {
+  max-width:750px;
+  margin:auto;
+  opacity:0.9;
+  line-height:1.6;
+}
+
+/* FORM */
 form {
   display:flex;
   flex-direction:column;
   gap:10px;
-  max-width:400px;
+  max-width:420px;
   margin:auto;
 }
 
@@ -111,6 +136,7 @@ button {
   cursor:pointer;
 }
 
+/* WHATSAPP */
 .whatsapp {
   display:inline-block;
   margin-top:20px;
@@ -122,8 +148,9 @@ button {
   font-weight:bold;
 }
 
+/* FAQ */
 .faq {
-  max-width:600px;
+  max-width:700px;
   margin:auto;
   text-align:left;
 }
@@ -140,6 +167,7 @@ footer {
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
   <nav>
     <h2>WebStudio Pro</h2>
@@ -147,55 +175,103 @@ footer {
   </nav>
 
   <div class="hero-content">
-    <h1>Websites die klanten opleveren</h1>
-    <p>Premium webdesign voor ondernemers.</p>
+    <h1>Websites die écht klanten opleveren</h1>
+    <p>
+      Wij bouwen premium websites voor ondernemers die meer klanten, meer vertrouwen en meer omzet willen.
+    </p>
+
     <a href="#pricing" class="btn">Bekijk pakketten</a>
   </div>
 </header>
 
+<!-- FEATURES -->
 <section class="features">
-  <div>⚡ Snel</div>
-  <div>🎨 Premium</div>
-  <div>📱 Mobiel</div>
-  <div>🚀 Resultaat</div>
+  <div>⚡ Snelle levering</div>
+  <div>🎨 Premium design</div>
+  <div>📱 Perfect mobiel</div>
+  <div>🚀 Conversie gericht</div>
 </section>
 
+<!-- WHAT YOU DO -->
+<section>
+  <div class="container">
+    <h2>Wat wij doen</h2>
+    <p class="text">
+      Wij maken geen “mooie websites alleen”. Wij bouwen websites die klanten aantrekken.
+      Alles is ontworpen om bezoekers om te zetten in betalende klanten.
+      Inclusief design, structuur, teksten en optimalisatie.
+    </p>
+  </div>
+</section>
+
+<!-- PACKAGES -->
 <section id="pricing">
   <h2>Pakketten</h2>
 
   <div class="cards">
+
     <div class="card" onclick="selectPackage('Starter €129')">
       <h3>Starter</h3>
       <p class="price">€129</p>
+      <p>1 pagina website<br>Basis design + contact</p>
     </div>
 
     <div class="card highlight" onclick="selectPackage('Business €299')">
       <h3>Business ⭐</h3>
       <p class="price">€299</p>
+      <p>Meest gekozen<br>5 pagina’s + betere conversie structuur</p>
     </div>
 
     <div class="card" onclick="selectPackage('Premium €599')">
       <h3>Premium</h3>
       <p class="price">€599</p>
+      <p>Complete website<br>SEO + optimalisatie + extra functies</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section>
+  <h2>Waarom ons?</h2>
+  <p class="text">
+    De meeste websites zijn alleen “mooi”. Wij focussen op resultaat:
+    meer klanten, meer aanvragen en meer vertrouwen.
+  </p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <h2>Wat klanten zeggen</h2>
+
+  <div class="cards">
+    <div class="card">
+      “Binnen 3 dagen mijn website en meteen nieuwe klanten.” – Mark
+    </div>
+    <div class="card">
+      “Super strak design en snelle communicatie.” – Lisa
     </div>
   </div>
 </section>
 
+<!-- FAQ -->
 <section class="faq">
   <h2>FAQ</h2>
 
-  <p><b>Hoe snel klaar?</b><br>Binnen 2–5 dagen</p>
-  <p><b>Moet ik iets doen?</b><br>Alleen info aanleveren</p>
-  <p><b>Kan ik aanpassingen krijgen?</b><br>Ja kleine fixes</p>
+  <p><b>Hoe snel klaar?</b><br>2–5 dagen</p>
+  <p><b>Moet ik zelf iets doen?</b><br>Alleen info aanleveren</p>
+  <p><b>Kan ik later aanpassen?</b><br>Ja kleine wijzigingen</p>
+  <p><b>Is het mobiel?</b><br>Ja volledig responsive</p>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>Vraag jouw website aan</h2>
 
   <form id="form">
     <input type="text" id="name" placeholder="Naam" required/>
     <input type="email" id="email" placeholder="Email" required/>
-    <textarea id="message" placeholder="Jouw bericht / gekozen pakket" required></textarea>
+    <textarea id="message" placeholder="Vertel je idee / pakket" required></textarea>
 
     <button type="submit">Verstuur aanvraag</button>
   </form>
@@ -203,7 +279,7 @@ footer {
   <p id="status"></p>
 
   <a class="whatsapp" href="https://wa.me/31625166241" target="_blank">
-    💬 WhatsApp
+    💬 WhatsApp direct
   </a>
 </section>
 
@@ -212,7 +288,7 @@ footer {
 </footer>
 
 <script>
-/* EMAILJS INIT */
+/* EMAILJS */
 (function(){
   emailjs.init("ff3x9snV40S-ijke0");
 })();
@@ -220,14 +296,14 @@ footer {
 /* PACKAGE SELECT */
 function selectPackage(pkg){
   document.getElementById("message").value =
-    "Ik wil het pakket: " + pkg;
+    "Ik wil dit pakket: " + pkg;
 
   document.getElementById("contact").scrollIntoView({
     behavior: "smooth"
   });
 }
 
-/* FORM SEND */
+/* FORM */
 document.getElementById("form").addEventListener("submit", function(e){
   e.preventDefault();
 
