@@ -1,115 +1,12 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>WebStudio Pro - Premium Webdesign</title>
 
-<link rel="stylesheet" href="style.css"/>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-</head>
-
-<body>
-
-<header class="hero">
-  <nav>
-    <h2>WebStudio Pro</h2>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="hero-content">
-    <h1>Websites die écht klanten opleveren</h1>
-    <p>Premium webdesign voor ondernemers die willen groeien en meer omzet willen.</p>
-    <a href="#pricing" class="btn">Bekijk pakketten</a>
-  </div>
-</header>
-
-<section class="features">
-  <div>⚡ Snel online</div>
-  <div>🎨 Premium design</div>
-  <div>📱 Mobiel perfect</div>
-  <div>🚀 Conversie gericht</div>
-</section>
-
-<section id="pricing" class="pricing">
-  <h2>Pakketten</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Starter</h3>
-      <p class="price">€129</p>
-      <p>1 pagina website</p>
-    </div>
-
-    <div class="card highlight">
-      <h3>Business ⭐</h3>
-      <p class="price">€299</p>
-      <p>Meest gekozen - 5 pagina’s + contactformulier</p>
-    </div>
-
-    <div class="card">
-      <h3>Premium</h3>
-      <p class="price">€599</p>
-      <p>Complete website + SEO + optimalisatie</p>
-    </div>
-  </div>
-</section>
-
-<section class="portfolio">
-  <h2>Voorbeelden</h2>
-  <div class="portfolio-grid">
-    <div class="project">Restaurant Website</div>
-    <div class="project">Kapper Website</div>
-    <div class="project">Coach Website</div>
-  </div>
-</section>
-
-<section class="testimonials">
-  <h2>Wat klanten zeggen</h2>
-
-  <div class="cards">
-    <div class="card">
-      "Super snelle service en mooie website!" – Mark
-    </div>
-    <div class="card">
-      "Binnen 3 dagen online, top kwaliteit." – Lisa
-    </div>
-  </div>
-</section>
-
-<section class="faq">
-  <h2>Veelgestelde vragen</h2>
-
-  <p><b>Hoe snel is mijn website klaar?</b><br>Meestal binnen 2–5 dagen.</p>
-  <p><b>Kan ik aanpassingen krijgen?</b><br>Ja, kleine aanpassingen zijn inbegrepen.</p>
-  <p><b>Moet ik zelf iets doen?</b><br>Alleen teksten en informatie aanleveren.</p>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Vraag jouw website aan</h2>
-
-  <form id="form">
-    <input type="text" id="name" placeholder="Naam" required/>
-    <input type="email" id="email" placeholder="Email" required/>
-    <textarea id="message" placeholder="Beschrijf jouw website..." required></textarea>
-
-    <button type="submit">Verstuur aanvraag</button>
-  </form>
-
-  <p id="status"></p>
-
-  <a class="whatsapp" href="https://wa.me/NUMMERHIER" target="_blank">
-    💬 WhatsApp direct
-  </a>
-</section>
-
-<footer>
-  <p>© 2026 WebStudio Pro</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+<style>
 body {
   margin: 0;
   font-family: Arial;
@@ -138,7 +35,6 @@ nav {
   font-size: 44px;
 }
 
-/* BUTTON */
 .btn {
   display:inline-block;
   margin-top:20px;
@@ -150,7 +46,6 @@ nav {
   text-decoration:none;
 }
 
-/* FEATURES */
 .features {
   display:flex;
   justify-content:center;
@@ -160,13 +55,11 @@ nav {
   flex-wrap:wrap;
 }
 
-/* SECTIONS */
 section {
   padding:60px 20px;
   text-align:center;
 }
 
-/* CARDS */
 .cards {
   display:flex;
   justify-content:center;
@@ -191,29 +84,6 @@ section {
   font-weight:bold;
 }
 
-/* PORTFOLIO */
-.portfolio-grid {
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-.project {
-  background:#111827;
-  padding:20px;
-  border-radius:10px;
-  width:200px;
-}
-
-/* FAQ */
-.faq p {
-  max-width:600px;
-  margin:10px auto;
-  text-align:left;
-}
-
-/* CONTACT */
 form {
   display:flex;
   flex-direction:column;
@@ -234,9 +104,9 @@ button {
   border:none;
   color:white;
   border-radius:6px;
+  cursor:pointer;
 }
 
-/* WHATSAPP */
 .whatsapp {
   display:inline-block;
   margin-top:20px;
@@ -252,25 +122,103 @@ footer {
   text-align:center;
   padding:20px;
   background:#020617;
-}(function(){
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<header class="hero">
+  <nav>
+    <h2>WebStudio Pro</h2>
+    <a href="#contact" style="color:white;text-decoration:none;">Contact</a>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Websites die écht klanten opleveren</h1>
+    <p>Premium webdesign voor ondernemers die willen groeien.</p>
+    <a href="#pricing" class="btn">Bekijk pakketten</a>
+  </div>
+</header>
+
+<section class="features">
+  <div>⚡ Snel online</div>
+  <div>🎨 Premium design</div>
+  <div>📱 Mobiel perfect</div>
+  <div>🚀 Meer klanten</div>
+</section>
+
+<section id="pricing">
+  <h2>Pakketten</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Starter</h3>
+      <p class="price">€129</p>
+      <p>1 pagina website</p>
+    </div>
+
+    <div class="card highlight">
+      <h3>Business ⭐</h3>
+      <p class="price">€299</p>
+      <p>Meest gekozen</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <p class="price">€599</p>
+      <p>Complete website</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Vraag jouw website aan</h2>
+
+  <form id="form">
+    <input type="text" id="name" placeholder="Naam" required/>
+    <input type="email" id="email" placeholder="Email" required/>
+    <textarea id="message" placeholder="Wat wil je?" required></textarea>
+
+    <button type="submit">Verstuur aanvraag</button>
+  </form>
+
+  <p id="status"></p>
+
+  <a class="whatsapp" href="https://wa.me/316XXXXXXXX" target="_blank">
+    💬 WhatsApp direct
+  </a>
+</section>
+
+<footer>
+  © 2026 WebStudio Pro
+</footer>
+
+<script>
+(function(){
   emailjs.init("ff3x9snV40S-ijke0");
 })();
 
 document.getElementById("form").addEventListener("submit", function(e){
   e.preventDefault();
 
-  const status = document.getElementById("status");
-  status.innerText = "Versturen...";
+  document.getElementById("status").innerText = "Versturen...";
 
   emailjs.send("service_z81n99u", "template_csno00g", {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
     message: document.getElementById("message").value
   })
-  .then(()=>{
-    status.innerText = "Succes! Ik neem contact op.";
+  .then(() => {
+    document.getElementById("status").innerText = "Succes! We nemen contact op.";
   })
-  .catch(()=>{
-    status.innerText = "Er ging iets mis.";
+  .catch(() => {
+    document.getElementById("status").innerText = "Er ging iets mis.";
   });
 });
+</script>
+
+</body>
+</html>
