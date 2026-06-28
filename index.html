@@ -4,71 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WebStudio Pro</title>
+<title>WebStudio Pro | Websites die klanten opleveren</title>
+
+<meta name="description" content="Premium websites voor ondernemers. Meer klanten via SEO, design en conversie optimalisatie.">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <style>
 body{
 margin:0;
 font-family:Arial;
-background:#0b0f1a;
+background:#070b14;
 color:white;
 }
 
 nav{
 display:flex;
 justify-content:space-between;
-padding:20px;
-background:#111827;
+align-items:center;
+padding:20px 30px;
+background:#0f172a;
+position:sticky;
+top:0;
+z-index:10;
 }
 
 .hero{
 text-align:center;
-padding:100px 20px;
+padding:120px 20px;
+background: radial-gradient(circle at top, #1e293b, #070b14);
 }
 
 .hero h1{
-font-size:40px;
+font-size:48px;
+max-width:900px;
+margin:auto;
+}
+
+.hero p{
+opacity:0.75;
+max-width:700px;
+margin:15px auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 24px;
+background:white;
+color:black;
+border-radius:10px;
+font-weight:bold;
+text-decoration:none;
+transition:0.2s;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 section{
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
 .grid{
 display:flex;
-gap:20px;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
 .card{
-background:#1f2937;
-padding:20px;
-border-radius:12px;
-width:250px;
+background:#111827;
+padding:25px;
+border-radius:14px;
+width:280px;
+text-align:left;
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.highlight{
+border:2px solid #7c3aed;
+}
+
+h2{
+font-size:34px;
+margin-bottom:20px;
+}
+
+.small{
+opacity:0.75;
+max-width:750px;
+margin:auto;
 }
 
 form{
 display:flex;
 flex-direction:column;
-gap:10px;
-max-width:350px;
+gap:12px;
+max-width:420px;
 margin:auto;
 }
 
-input,textarea{
-padding:10px;
+input,textarea,select{
+padding:12px;
 border:none;
-border-radius:6px;
+border-radius:8px;
 }
 
 button{
-padding:10px;
+padding:14px;
 background:white;
 border:none;
 cursor:pointer;
-border-radius:6px;
+border-radius:8px;
+font-weight:bold;
+}
+
+button:hover{
+opacity:0.85;
+}
+
+.faq{
+max-width:750px;
+margin:auto;
+text-align:left;
+}
+
+.faq p{
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
 }
 
 .whatsapp{
@@ -76,26 +148,35 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:12px;
+padding:14px 16px;
 border-radius:50px;
 color:white;
 text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 </style>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
 
 <nav>
-<div>WebStudio Pro</div>
+<div><b>WebStudio Pro</b></div>
+<a href="#contact" style="color:white;">Offerte aanvragen</a>
 </nav>
 
 <header class="hero">
-<h1>Websites die klanten opleveren</h1>
-<p>Premium webdesign voor ondernemers</p>
+<h1>Websites die klanten opleveren, niet alleen design</h1>
+<p>Wij bouwen high-conversion websites die zorgen voor meer leads, klanten en omzet.</p>
+<a class="btn" href="#contact">Gratis offerte aanvragen</a>
 </header>
+
+<section>
+<h2>Waarom ons?</h2>
+<p class="small">
+Wij bouwen geen “mooie websites”. Wij bouwen systemen die klanten opleveren via SEO, snelheid en conversie-optimalisatie.
+</p>
+</section>
 
 <section>
 <h2>Pakketten</h2>
@@ -104,40 +185,67 @@ text-decoration:none;
 
 <div class="card">
 <h3>Starter</h3>
-<p>€129</p>
-<p>1 pagina website</p>
+<p><b>€129</b></p>
+<p>✔ 1 pagina website<br>✔ Contactformulier<br>✔ Basis design</p>
 </div>
 
-<div class="card">
-<h3>Business</h3>
-<p>€299</p>
-<p>Meest gekozen</p>
+<div class="card highlight">
+<h3>Business ⭐</h3>
+<p><b>€299</b></p>
+<p>✔ Complete website<br>✔ SEO structuur<br>✔ Conversie optimalisatie<br>✔ Meest gekozen</p>
 </div>
 
 <div class="card">
 <h3>Premium</h3>
-<p>€599</p>
-<p>Complete website</p>
+<p><b>€599</b></p>
+<p>✔ High-end design<br>✔ Strategie + structuur<br>✔ Maximale conversie</p>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>Contact</h2>
+<h2>Werkwijze</h2>
+
+<div class="grid">
+<div class="card">1. Intake & doelen</div>
+<div class="card">2. Design & structuur</div>
+<div class="card">3. Bouw & optimalisatie</div>
+<div class="card">4. Live & support</div>
+</div>
+</section>
+
+<section class="faq">
+<h2>FAQ</h2>
+
+<p><b>Hoe snel klaar?</b><br>Meestal 2–5 dagen.</p>
+<p><b>Wordt mijn site goed gevonden?</b><br>Ja, SEO structuur zit erin.</p>
+<p><b>Kan ik offerte aanvragen?</b><br>Ja via formulier hieronder.</p>
+<p><b>Is WhatsApp beschikbaar?</b><br>Ja, direct contact mogelijk.</p>
+</section>
+
+<section id="contact">
+<h2>Contact / Offerte</h2>
 
 <form id="form">
+
 <input id="name" placeholder="Naam" required>
 <input id="email" placeholder="Email" required>
-<textarea id="message" placeholder="Bericht" required></textarea>
+
+<select id="type">
+<option value="Vraag">Vraag</option>
+<option value="Offerte">Offerte aanvraag</option>
+</select>
+
+<textarea id="message" placeholder="Jouw bericht" required></textarea>
 
 <button type="submit">Versturen</button>
 </form>
 
 <p id="status"></p>
+</section>
 
 <a class="whatsapp" href="https://wa.me/31625166241">WhatsApp</a>
-</section>
 
 <script>
 emailjs.init("fg3x9snV40S-ijke0");
@@ -150,16 +258,17 @@ document.getElementById("status").innerText = "Versturen...";
 emailjs.send("service_z81n99u","template_csno00g",{
 from_name: document.getElementById("name").value,
 from_email: document.getElementById("email").value,
+type: document.getElementById("type").value,
 message: document.getElementById("message").value
 })
 
 .then(()=>{
-document.getElementById("status").innerText = "Succes!";
+document.getElementById("status").innerText = "Succes! We nemen contact op.";
 document.getElementById("form").reset();
 })
 
 .catch(()=>{
-document.getElementById("status").innerText = "Fout bij verzenden";
+document.getElementById("status").innerText = "Fout bij verzenden.";
 });
 });
 </script>
